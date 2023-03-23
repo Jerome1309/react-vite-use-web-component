@@ -5,10 +5,66 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
+    <!-- <script
+      src="http://172.20.32.1:8080/index.js"
+      type="text/javascript"
+    ></script> -->
+    <!-- <script type="text/javascript">
+      document.write(
+        "<script " +
+          'src="http://172.20.32.1:8080/index.js?' +
+          Math.random() +
+          '" type="text/javascript"></scr' +
+          "ipt>"
+      );
+    </script> -->
+
+    <script
+      src="https://d2pxrokdcau5bl.cloudfront.net/starwars.js"
+      type="text/javascript"
+    ></script>
+
+    <!-- <script>
+      function loadWidget() {
+        console.log("LOAD WIDGET");
+        var src = "http://172.20.32.1:8080/index.js";
+        var head = document.getElementsByTagName("head")[0];
+        var oldScript = document.getElementById("widgetScript");
+        console.log(script);
+        // const oldElem = document.getElementById("widgetScript");
+        // head.removeChild(oldElem);
+        var script = document.createElement("script");
+        script.src = src;
+        script.id = "widgetScript";
+        head.appendChild(script);
+      }
+      loadWidget();
+    </script> -->
+    <!-- <script>
+      const src = "http://172.20.32.1:8080/index.js";
+      const date = Date.now();
+      const currentScripts = document.querySelectorAll(
+        "script"
+        // `script[src='${src}']`
+      );
+      console.log(currentScripts);
+
+      currentScriptsArr = Array.from(currentScripts);
+      console.log(currentScriptsArr);
+
+      currentScript = currentScriptsArr.find((script) =>
+        script.attributs?.src.includes(src)
+      );
+      currentScript?.parentNode.removeChild(currentScript);
+      const head = document.getElementsByTagName("head")[0];
+      const newScript = document.createElement("script");
+      newScript.src = src + `?date=${date}`;
+      newScript.type = "text/javascript";
+      head.appendChild(newScript);
+    </script> -->
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-    <!-- <script src="http://172.20.32.1:8080/index-78be15ec.js"></script> -->
   </body>
 </html>
