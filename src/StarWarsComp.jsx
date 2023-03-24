@@ -20,7 +20,12 @@ const StarWarsComp = () => {
     };
   }, []);
 
-  return <react-starwars title="tessssst" widgetid="widget"></react-starwars>;
+  return (
+    <>
+      <button>Test</button>
+      <react-starwars title="tessssst" widgetid="widget"></react-starwars>
+    </>
+  );
 };
 
 export default StarWarsComp;
